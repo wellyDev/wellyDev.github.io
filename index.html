@@ -5,100 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WellyDev</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--Jquery-->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 </head>
 <body>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 bg-white rounded sticky-top">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" width="65" height="75">WellyDev</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#sobre">Sobre </span></a>
-                    <a class="nav-item nav-link" href="#sisgo">SISGO</a>
-                    <a class="nav-item nav-link" href="#web">Web</a>
-                    <a class="nav-item nav-link" href="#desk">Desktop / Mobile</a>
-
-                  </div>
+    <!--NavBar-->
+    <nav class="pl-5 navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="80px" id="img-banner"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active" id="home">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item" id="dev">
+                  <a class="nav-link" href="#desenvolvimento">Desenvolvimento</a>
+                </li>
+                <li class="nav-item" id="so">
+                  <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item" id="no">
+                    <a class="nav-link" href="#nossa" >Nossa Equipe</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    <!--Banner-->
+    <div class="banner">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12 text-center">
+                    <h1 class="titulo">WellyDev</h1>
+                    <p class="lead text-white" id="subtitulo">Transformamos suas ideias em <strong>Realidade!</strong></p>
                 </div>
-              </nav>              
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg">
-                <img src="img/banner.jpg" class="img-fluid">
             </div>
         </div>
     </div>
-    
-    <!--Cabeçalho-->
-    <div class="container mt-5">
+    <!--MainPage-->
+    <div class="container-fluid mt-5">
+      <!--Desenvolvimento-->
+        <div class="row d-flex justify-content-center" id="desenvolvimento">
+            <div class="col-lg-3" id="web">
+                <img src="img/icons/programming.png">
+                <h1 class="display-3">Web</h1>
+                <p class="lead pt-3 text-justify">Trabalhamos com Desenvolvimento web Back-End e Front-End. Nossa equipe trabalha com linguagens variadas como Java(Spring), PHP, C#(asp.net), JavaScript e Ruby On Rails, etc...
 
-        <div class="row" id="sobre">
-            <div class="col-lg-3">
-                <h1 class="display-4">Sobre Nós</h1>
+                    </p>
             </div>
-            <div class="col-lg-4">
-                <p class="lead text-justify">A WellyDev é uma companhia nova que tem origem devido as dificuldades que micro e pequenas Empresas encontram ao procurar por desenvolvedores com preços acessíveis para sistemas simples, nosso compromisso é disponibilizar condições para qualquer pessoa física/juridica poder criar seu website ou sistema proprio.</p>
+            <div class="col-lg-3" id="pc">
+                <img src="img/icons/monitor.png">
+                <h1 class="display-3">Desktop</h1>
+                <p class="lead pt-3 text-justify">No Desenvolvimento Desktop trabalhamos com C#, Python, JavaScript(electron) e Java, criamos sistemas para modernizar o máximo possível sua empresa.</p>
             </div>
-        </div>
-        <div class="row mt-5" id="sisgo">
-            <div class="col-lg-4">
-                <p class="lead text-justify"><strong>SISGO</strong> é um sistema desenvolvido pela WellyDev Com a intenção de torna mais acessível as tecnologias para pequenos escritórios de odontologia. O SISGO é totalmente web feito em PHP JavaScript e boostrap Com funções recursiva e otimizado para sistemas mobile, acesse o SISGO Do seu Navegador, tablet e celular.</p>
-            </div>
-            <div class="col-lg-5">
-                <img src="img/SISGO.jpeg" class="img-thumbnail">
+            <div class="col-lg-3" id="mobile">
+                <img src="img/icons/coding.png">
+                <h1 class="display-3">Mobile</h1>
+                <p class="lead pt-3 text-justify">No Desenvolvimento Mobile nos esforçamos o máximo possível para adaptar seus sistemas para qualquer dispostivo tais quais Android e IOS. trabalhando com linguagens como Java, dart(flutter) e JavaScript.</p>
             </div>
         </div>
+      <!--Sobre-->
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-6">
+          <h1 class="display-4" id="sobre">Sobre Nós</h1>
+          <p class="lead pt-5 text-justify">A WellyDev é uma companhia nova que tem origem devido as dificuldades que micro e pequenas Empresas encontram ao procurar por desenvolvedores com preços acessíveis para sistemas simples, nosso compromisso é disponibilizar condições para qualquer pessoa física/juridica poder criar seu website ou sistema proprio.</p>
+        </div>
+      </div>
+      <!--Nossa Equipe-->
+      <div class="row d-flex justify-content-center" id="nossa">
+        <h1 class="display-4 mt-5">Nossa Equipe</h1>
+      </div>
+      <div class="row d-flex justify-content-center text-center">
+        <!--wellington-->
+        <div class="col-lg-2">
+          <img src="img/equipe/wellington.jpeg" class="img-circulo">
+          <a href="https://wellingtonalves-dev.github.io/" target="_blank">Wellington Alves</a>
+        </div>
+          <!--Adelia-->
+        <div class="col-lg-2">
+          <img src="img/equipe/delly.jpg" class="img-circulo">
+          <a href="https://adeliacm.github.io/" target="_blank">Adélia Camargo</a>
 
-        <div class="row mt-5" id="web">
-            <div class="col-lg-5">
-                <img src="img/web.png" class="img-fluid">
-            </div>
-            <div class="col-lg-4 mt-5">
-                <p class="lead text-justify"><strong>Web Developer:</strong> Trabalhamos com Desenvolvimento web Back-End e Front-End. Nossa equipe trabalha com linguagens variadas como Java(Spring), PHP, C#(asp.net), JavaScript e Ruby On Rails, etc...</p>
-            </div>
         </div>
-
-        <div class="row mt-5" id="desk">
-            <div class="col-lg-4">
-                <p class="lead text-justify"><strong>Desktop Developer:</strong> No Desenvolvimento Desktop trabalhamos com C#, Python, JavaScript(electron) e Java, criamos sistemas para modernizar o máximo possível sua empresa.</p>
-            </div>
-            <div class="col-lg-5">
-                <img src="img/desk.png" class="img-fluid">
-            </div>
-        </div>
-
-        <div class="row mt-5" id="mobile">
-            <div class="col-lg-5">
-                <img src="img/mobile.png" class="img-fluid">
-            </div>
-            <div class="col-lg-4">
-                <p class="lead text-justify"><strong>Mobile Developer:</strong> No Desenvolvimento Mobile nos esforçamos o máximo possível para adaptar seus sistemas para qualquer dispostivo tais quais Android e IOS. trabalhando com linguagens como Java, dart(flutter) e JavaScript.</p>
-            </div>
-        </div>
+      </div>
     </div>
-
-    <!--footer-->
-    <div class="container-fluid pt-2 bg-dark mt-1">
-        <div class="row">
-            <div class="col-lg text-left">
-                <p class="text-light">&copy; WellyDev</p>
-            </div>
-            <div class="col-lg text-center text-light mr-5 mb-1">
-                <p>(11)9998-86367</p>
-                <p>wellydev@outlook.com</p>
-                <a href="https://www.facebook.com/wellyDev"><img src="img/face.png" class="img-fluid"></a>
-                <a href="https://www.instagram.com/welly.dev"><img src="img/insta.png" class="img-fluid"></a>
-            </div>
+    <!--Footer-->
+    <div class="container-fluid mt-5">
+      <div class="row bg-dark pt-3">
+        <div class="col">
+          <h1 class="mini-titulo">&copy;WellyDev</h1>
         </div>
-
+        <div class="col text-white">
+          <p class="mini-info">Whatsapp: (11) 99988-6367</p>
+          <p class="mini-info">email: wellydev@outlook.com</p>
+          <p class="mini-info">Instagram: welly.dev</p>
+        </div>
+      </div>
     </div>
+<!--JavaScript-->
+<script>
+
+var img = document.getElementById("img-banner");
+$(window).scroll(function() {
+  if($(this).scrollTop() > 500) {
+    $("#navbar").addClass("bg-dark");
+    img.height = 50;
+    $("#dev").addClass("active");
+    $("#no").removeClass("active");
+    $("#so").removeClass("active");
+    $("#home").removeClass("active");
+  }
+  else {
+    $("#home").addClass("active");
+    $("#navbar").removeClass("bg-dark");
+    $("#dev").removeClass("active");
+    $("#no").removeClass("active");
+    $("#so").removeClass("active");
+    img.height = 80;
+
+  }
+
+  if ($(this).scrollTop() > 900){
+    $("#so").addClass("active");
+    $("#no").removeClass("active");
+    $("#dev").removeClass("active");
+    $("#home").removeClass("active");
+
+  }
+  if($(this).scrollTop() > 1200) {
+    $("#no").addClass("active");
+    $("#so").removeClass("active");
+    $("#dev").removeClass("active");
+    $("#home").removeClass("active");
+
+  }
+})
+</script>
 </body>
 </html>
